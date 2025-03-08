@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Main Section Styles */  
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    width: auto;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2d2c2c;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form input, form button {
+        padding: 12px;
+    }
+}
+
+/* For smaller mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    form {
+        width: 95%;
+        padding: 10px;
+    }
+
+    form input, form button {
+        padding: 10px;
+    }
+}
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);; /* Create 2 columns */
+    grid-template-rows: repeat(1, 1fr); /* Create 2 rows */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    background-color: rgb(214, 205, 205);
+}
+
+/* Styling grid items */
+.grid-item {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid green;
+    text-align: center;
+}
+
+/* Make grid responsive for smaller screens */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+    }
+}
